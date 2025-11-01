@@ -95,6 +95,7 @@ header nav a:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .card:hover {
@@ -115,48 +116,4 @@ header nav a:hover {
 
 .card p {
   margin: 0 15px 20px;
-  color: #333;
-}
-
-/* === Formulario de contacto === */
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-form input,
-form textarea {
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-family: inherit;
-}
-
-form button {
-  background: #d4af37;
-  color: #0d1b2a;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-form button:hover {
-  background: #c19e30;
-}
-
-/* === Footer === */
-footer {
-  background-color: #0d1b2a;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-
-  } 
-.titulo-blanco {
-    color: white;
-}
+  color:
