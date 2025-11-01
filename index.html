@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Emprendum Legal</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Emprendum Legal</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
     
-  <body>
-  <!-- HEADER -->
+<body>
+<!-- HEADER -->
 <header>
   <img src="https://raw.githubusercontent.com/emprendumlegal/emprendum-legal-assets/main/logo%20emprendum%20legal.png" alt="Logo Emprendum Legal">
   <nav>
@@ -43,35 +43,32 @@
 <section id="servicios" class="container">
   <h2>Servicios</h2>
   <div class="services">
-    
-    <div class="card" onclick="mostrarDescripcion('civil')">
+
+    <a href="civil.html" class="card">
       <img src="https://plus.unsplash.com/premium_photo-1661540409860-fe00bb21a51c?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1332" alt="Derecho Civil">
       <h3>Derecho Civil</h3>
       <p>Contratos, herencias, familia y más.</p>
-    </div>
+    </a>
 
-    <div class="card" onclick="mostrarDescripcion('laboral')">
+    <a href="laboral.html" class="card">
       <img src="https://plus.unsplash.com/premium_photo-1661589908866-5618d81fca85?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1170" alt="Derecho Laboral">
       <h3>Derecho Laboral</h3>
       <p>Despidos, indemnizaciones y conflictos laborales.</p>
-    </div>
+    </a>
 
-    <div class="card" onclick="mostrarDescripcion('extranjeria')">
-      <img src="https://images.unsplash.com/photo-1655722725332-9925c96dd627?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2070" alt="Extranjería - Pasaporte">
+    <a href="extranjeria.html" class="card">
+      <img src="https://images.unsplash.com/photo-1655722725332-9925c96dd627?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2070" alt="Extranjería">
       <h3>Extranjería</h3>
       <p>Permisos de residencia, nacionalidad y trámites migratorios.</p>
-    </div>
+    </a>
 
-    <div class="card" onclick="mostrarDescripcion('empresarial')">
+    <a href="empresarial.html" class="card">
       <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80" alt="Asesoría Empresarial">
       <h3>Asesoría Empresarial</h3>
       <p>Constitución de sociedades, compliance y contratos.</p>
-    </div>
+    </a>
 
   </div>
-
-  <!-- Descripción dinámica -->
-  <div id="descripcion-servicio" class="descripcion-servicio"></div>
 </section>
 
 <!-- CONTACTO -->
@@ -89,32 +86,4 @@
 <!-- FOOTER -->
 <footer>
   <p>&copy; 2025 Emprendum Legal - Todos los derechos reservados</p>
-</footer>
-
-<!-- SCRIPT: Mostrar descripción de servicios -->
-<script>
-  function mostrarDescripcion(servicio) {
-    const descripciones = {
-      civil: "En Emprendum Legal ofrecemos asesoría en contratos, herencias, familia y más, brindando un acompañamiento cercano y soluciones adaptadas a cada caso.",
-      laboral: "Te ayudamos en despidos, indemnizaciones y conflictos laborales, defendiendo siempre tus derechos con seriedad y confianza.",
-      extranjeria: "Gestionamos permisos de residencia, nacionalidad y todos los trámites migratorios con atención personalizada y eficaz.",
-      empresarial: "Apoyamos la constitución de sociedades, el cumplimiento normativo (compliance) y la redacción de contratos empresariales."
-    };
-
-    const contenedor = document.getElementById('descripcion-servicio');
-
-    // Mostrar/ocultar según clic
-    if (contenedor.dataset.visible === servicio) {
-      contenedor.style.display = 'none';
-      contenedor.dataset.visible = '';
-    } else {
-      contenedor.style.display = 'block';
-      contenedor.innerHTML = `<p>${descripciones[servicio]}</p>`;
-      contenedor.dataset.visible = servicio;
-      contenedor.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-</script>
-    
-  </body>
-</html>
+<
