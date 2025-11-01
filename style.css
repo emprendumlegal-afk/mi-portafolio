@@ -89,19 +89,15 @@ header nav a:hover {
   margin-top: 30px;
 }
 
-.services a.card {
-  display: block;
+.card {
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   overflow: hidden;
-  text-decoration: none;
-  color: inherit;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
 }
 
-.services a.card:hover {
+.card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
@@ -160,7 +156,6 @@ footer {
   padding: 20px;
   font-size: 0.9rem;
 }
-
 .titulo-blanco {
-  color: white;
+    color: white;
 }
